@@ -1,14 +1,7 @@
-import Sidebar from "../components/Sidebar";
-
 export default function Home() {
   return (
-    <main className="flex flex-row w-full h-screen py-5">
-      <Sidebar />
-
-      <div className="flex flex-row w-full">
-        <div className="flex w-1/2 justify-center text-center">Page Info</div>
-        <div className="flex w-1/2 justify-center text-center">Profile Summary</div>
-      </div>
-    </main>
+    <div className="flex flex-row w-full justify-center text-center items-center m-5">
+      <h1 className="text-9xl">Welcome Homepage</h1>
+    </div>
   );
 }
