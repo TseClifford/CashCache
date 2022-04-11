@@ -27,7 +27,7 @@ const LinkedIcon = (props) => {
 
   return (
     <Link href={"/" + feature.toLowerCase()}>
-      <a className="items-center text-center">
+      <a className="flex flex-col items-center text-center">
         {icon}
         {feature}
       </a>

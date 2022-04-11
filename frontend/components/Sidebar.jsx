@@ -3,9 +3,9 @@ import LinkedIcon from "./LinkedIcon";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col justify-between items-center p-5">
+    <div className="flex flex-col justify-between items-center w-32 px-5 py-10">
       <Link href="/">App Icon</Link>
-      <div className="flex flex-col justify-center items-center w-120 h-full space-y-10">
+      <div className="flex flex-col justify-center items-center h-full space-y-10">
         <LinkedIcon feature={"Summary"} />
         <LinkedIcon feature={"Transfer"} />
         <LinkedIcon feature={"Account"} />
