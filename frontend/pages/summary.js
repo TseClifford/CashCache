@@ -5,9 +5,13 @@ export default function Summary() {
     <div className="flex flex-row w-full">
       <main className="flex flex-col w-2/3 text-center px-5 py-10 bg-yellow-100 space-y-10">
         <section className="flex flex-row justify-between items-center">
-          <div>
-            <p>CashCache Summary</p>
-            <p>Good Evening, Clifford!</p>
+          <div className="text-left">
+            <p className="text-2xl">
+              <b>CashCache</b> Summary
+            </p>
+            <p className="text-slate-400 text-lg">
+              Good Evening, Clifford Tse!
+            </p>
           </div>
           <div>Search Bar</div>
         </section>
