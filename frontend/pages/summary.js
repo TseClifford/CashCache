@@ -1,9 +1,10 @@
 import BalanceBox from "../components/WindowElements/BalanceBox";
+import SearchBar from "../components/WindowElements/SearchBar";
 
 export default function Summary() {
   return (
     <div className="flex flex-row w-full">
-      <main className="flex flex-col w-2/3 text-center px-5 py-10 bg-yellow-100 space-y-10">
+      <main className="flex flex-col w-2/3 text-center px-5 py-10 space-y-10">
         <section className="flex flex-row justify-between items-center">
           <div className="text-left">
             <p className="text-2xl">
@@ -13,7 +14,7 @@ export default function Summary() {
               Good Evening, Clifford Tse!
             </p>
           </div>
-          <div>Search Bar</div>
+          <SearchBar placeholder={"Search activity or another..."} />
         </section>
         <section className="flex flex-row justify-between">
           <BalanceBox />
