@@ -1,5 +1,6 @@
 import BalanceBox from "../components/WindowElements/BalanceBox";
 import MoneyTransfer from "../components/WindowElements/MoneyTransfer";
+import SpendingGraph from "../components/WindowElements/SpendingGraph";
 import SearchBar from "../components/WindowElements/SearchBar";
 
 export default function Summary() {
@@ -21,7 +22,7 @@ export default function Summary() {
           <BalanceBox />
           <MoneyTransfer />
         </section>
-        <div>Payment Chart/Graph</div>
+        <SpendingGraph />
         <div>Invoice History</div>
       </main>
       <div className="flex w-1/3 justify-center text-center px-5 py-10 bg-red-100">
