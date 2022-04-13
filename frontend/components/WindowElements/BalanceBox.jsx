@@ -16,7 +16,7 @@ const BalanceBox = () => {
   }
 
   return (
-    <Box className="flex flex-col justify-between w-1/2 p-5 bg-white rounded-3xl space-y-5 overflow-clip">
+    <Box className="flex flex-col justify-between w-1/2 p-5 max-w-md bg-white rounded-3xl space-y-5 overflow-clip">
       <p className="font-bold">Your Total Balance</p>
       <p className="sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-purple-800">
         $123,000
