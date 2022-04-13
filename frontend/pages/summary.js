@@ -1,4 +1,5 @@
 import BalanceBox from "../components/WindowElements/BalanceBox";
+import MoneyTransfer from "../components/WindowElements/MoneyTransfer";
 import SearchBar from "../components/WindowElements/SearchBar";
 
 export default function Summary() {
@@ -16,9 +17,9 @@ export default function Summary() {
           </div>
           <SearchBar placeholder={"Search activity or another..."} />
         </section>
-        <section className="flex flex-row justify-between">
+        <section className="flex flex-row justify-between space-x-10">
           <BalanceBox />
-          <div>Send Money</div>
+          <MoneyTransfer />
         </section>
         <div>Payment Chart/Graph</div>
         <div>Invoice History</div>
