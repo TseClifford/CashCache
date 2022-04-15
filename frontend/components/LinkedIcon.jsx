@@ -8,7 +8,12 @@ import {
 
 const LinkedIcon = (props) => {
   const feature = props.feature;
+  let styling = "text-slate-400 hover:text-purple-800";
   let icon;
+
+  if (props.selected === true) {
+    styling = "text-purple-800";
+  }
 
   switch (feature) {
     case "Summary":
@@ -27,7 +32,7 @@ const LinkedIcon = (props) => {
 
   return (
     <Link href={"/" + feature.toLowerCase()}>
-      <a className="flex flex-col items-center text-center">
+      <a className={`flex flex-col items-center text-center ${styling}`}>
         {icon}
         {feature}
       </a>

@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import { ArrowDropUp, ArrowDropDown } from "@mui/icons-material";
 
 const BalanceBox = () => {
-  const dailyPrice = 3.14;
+  let dailyPrice = 3.14;
   let priceColor = "white";
   let priceMovement;
 
@@ -26,7 +26,7 @@ const BalanceBox = () => {
         className={`flex flex-row justify-center items-center self-center h-4 p-5 rounded-xl bg-${priceColor}-100 text-${priceColor}-600`}
       >
         {priceMovement ? priceMovement : null}
-        {dailyPrice !== 0 ? <p>{dailyPrice}%</p> : null}
+        {dailyPrice !== 0 && dailyPrice ? <p>{dailyPrice}%</p> : null}
       </Box>
     </Box>
   );
