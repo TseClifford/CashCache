@@ -2,11 +2,11 @@ import OverviewSummary from "../components/OverviewSummary";
 import useWindowSize from "../hooks/useWindowSize";
 
 export default function Summary() {
-  const width = useWindowSize().width;
+  const { width } = useWindowSize();
   const BREAKPOINT = 1024;
 
   return (
-    <div className="flex flex-row w-full">
+    <div className="flex flex-row w-[calc(100%-7em)]">
       {width && width >= BREAKPOINT && (
         <>
           <OverviewSummary width="w-2/3" border="border-r-2 border-slate-100" />
