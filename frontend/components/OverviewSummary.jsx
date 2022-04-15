@@ -5,7 +5,7 @@ import SearchBar from "./WindowElements/SearchBar";
 
 const OverviewSummary = (props) => {
   let addBorder = "";
-  if (props.border) addBorder = props.border;
+  if (props.width == "w-2/3") addBorder = "border-r-2 border-slate-100";
 
   return (
     <main

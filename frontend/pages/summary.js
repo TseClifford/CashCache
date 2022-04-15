@@ -6,10 +6,10 @@ export default function Summary() {
   const BREAKPOINT = 1024;
 
   return (
-    <div className="flex flex-row w-[calc(100%-7em)]">
+    <div className="flex flex-row w-[calc(100%-7em)] overflow-y-auto">
       {width && width >= BREAKPOINT && (
         <>
-          <OverviewSummary width="w-2/3" border="border-r-2 border-slate-100" />
+          <OverviewSummary width="w-2/3" />
           <div className="flex w-1/3 justify-center text-center p-10">
             Profile Summary
           </div>
