@@ -1,4 +1,5 @@
 import OverviewSummary from "../components/OverviewSummary";
+import ProfileSummary from "../components/ProfileSummary";
 import useWindowSize from "../hooks/useWindowSize";
 
 export default function Summary() {
@@ -10,9 +11,7 @@ export default function Summary() {
       {width && width >= BREAKPOINT && (
         <>
           <OverviewSummary width="w-2/3" />
-          <div className="flex w-1/3 justify-center text-center p-10">
-            Profile Summary
-          </div>
+          <ProfileSummary />
         </>
       )}
 
